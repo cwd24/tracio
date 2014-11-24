@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+.sectionheader {
+	background-color: #990000;
+	color:#FFFFFF;
+	font-size: 1.2em;
+	font-weight:bold;
+	padding:5px;
+}
+.section h3 {
+	/*text-decoration: underline;*/
+	margin:10px 0px;
+}
+.sectioncontent {
+	padding: 0px;
+}
+.section {
+	float: left;
+	margin: 0px 10px 0px 0px;
+	border: thin solid #999999;
+}
+#centres {
+		width:400px;
+}
+.subsection {
+	border-bottom:1px solid #999999;
+	padding: 0px 10px 10px 10px;
+	margin: 0px;
+}

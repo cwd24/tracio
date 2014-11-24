@@ -1,0 +1,411 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/* Added styles for cert page*/
+#page_pad{
+padding:0px 20px;
+}
+#name{
+font-family:"Times New Roman", Times, serif;
+font-style:italic;
+text-align:center;
+font-size:4em;
+padding:.5em 0em;
+}
+#comp_text{
+font-size:1.75em;
+text-align:center;
+padding:.5em 0em .3em;
+}
+#tracio_centre{
+font-size:2em;
+text-align:center;
+padding:1em 0em;
+font-weight:bold;
+}
+#dist_moved{
+font-size:1.75em;
+padding:.7em 0px;
+text-align:center;
+border:solid 4px black;
+}
+#interventions{
+margin:1.2em 0em;
+font-size:1.2em;
+}
+
+/* End Updates*/
+
+body {
+	font-family: arial, helvetica, sans-serif;
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 20px 0px;
+	font-size: 15px;
+}
+
+a:link {
+	color: #990000;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #CC6666;
+	text-decoration: none;
+}
+
+p {
+	margin: 5px 0px;
+}
+.annot {
+	margin: 0px;
+	padding: 0px;	
+}
+form{
+	padding: 0px;
+	margin: 0px;
+	}
+h1, h2, h3{
+color:#228105;
+}
+.redbar {
+	width: 100%;
+	height: 6px;
+	background-color: #990000;
+}
+
+.menubar {
+	width: 100%;
+	background-color: #CCCCCC;
+	font-size: 0.65em;
+	text-align: right;
+}
+
+.menubartext {
+	padding: .5em;
+}
+
+#main_content {
+	padding: 10px;
+	font-size: 1em;
+}
+
+#topImage {
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+}
+
+.q_table { /*border:solid 1px #990000;*/
+	background-image: url(images/t_back.gif);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+.q_line td {
+	padding: 5px 20px; /* 15px; */
+}
+
+.q_line_q3 td {
+	/* alt style for question 3 - the checkbox q */
+	padding: 2px 20px; /* 15px; */
+}
+
+.q_line input {
+	margin: 5px;
+}
+
+.question {
+	font-weight: bold;
+	
+}
+
+.question_area {
+	width: 800px;
+	margin: 0px auto 35px auto;
+	padding: 0px 10px 10px 10px;
+}
+
+.question_area table {
+	width: 800px;
+}
+
+.radio {
+	text-align: right;
+}
+
+/**********************************/
+.header td {
+	border-bottom: solid 1px #990000;
+	background-color: #990000;
+	color: #FFFFFF;
+}
+
+.q_line2 td {
+	width: 20%;
+	vertical-align: top;
+	color: #333333;
+}
+
+.q_line3 td {
+	width: 20%;
+	text-align: center;
+}
+
+.question_area2 {
+	width: 850px;
+	margin: auto auto 35px auto;
+	padding: 10px;
+}
+
+.question_area2 .q_table {
+	background-image: url(images/t_back2.gif);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+.question_area2 table {
+	width: 850px;
+	margin-bottom: 10px;
+}
+
+fieldset {
+	border: 1px solid #990000;
+}
+
+.results {
+	width: 800px;
+	margin: 10px auto 10px auto;
+}
+#buttnext{
+float:right;
+margin-top:5px;
+}
+#buttprev{
+margin-top:5px;
+}
+#submitbutt{
+float:right;
+margin-top:5px;
+}
+/* text resizer styles */
+#txt_norm {
+	
+}
+
+#txt_small {
+	font-size: 0.8em;
+}
+
+#txt_large {
+	font-size: 1.5em;
+}
+
+#txt_xlarge {
+	font-size: 2em;
+}
+
+.menubartext a {
+	text-decoration: none;
+	color: black;
+}
+
+#homepage {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#nav {
+	float: left;
+	margin: 10px 0px 0px 10px;
+}
+
+.navlink {
+	float: left;
+	padding-right: 8px;
+	padding-left: 8px;
+	border-right: solid 1px #000;
+}
+
+.foo {
+	font-weight: bold;
+}
+
+legend {
+	font-weight: bold;
+}
+
+a img {
+	border: none;
+}
+
+/* error styles */
+.alert {
+	padding-top: 3px;
+	padding-right: 5px;
+	padding-bottom: 3px;
+	padding-left: 30px;
+	padding: 3 5 3 30px;
+	border: 1px solid;
+	float: left;
+	clear: both;
+	margin: 3px 0px;
+	background-position: center left;
+	background-repeat: no-repeat;
+	font-size: 0.8em;
+}
+.warning {
+	background-color: #FFCCCC;
+	border: inherit #990000;
+	color: #990000;
+	background-image: url(images/warning.gif);
+}
+.sallgood {
+	background-color: #CCFFCC;
+	border: inherit #009900;
+	color: #009900;
+	background-image: url(images/sallgood.gif);
+}
+.boxer{
+	border:solid 3px #990000;
+	width:900px;
+	padding:10px;
+	margin:0px auto 20px auto;
+}
+.boxer:first-child{
+	border:none;
+}
+.centred {
+	text-align:center;
+}
+.annot {
+	border:solid 1px #c2c2c2;
+	background-color: #eaeaea;
+	padding:5px 10px;
+	margin:0px 0px 20px 0px;
+}
+.subannot_first{
+	height:15px;
+	margin:-18px 0px 0px 0px;
+	background:url(images/bub.gif);
+	background-repeat: repeat-x;
+}
+.subannot_two{
+	height:15px;
+	margin:-5px 0px 0px 0px;
+	background:url(images/bub.gif);
+	background-repeat: repeat-x;
+}
+.subannot {
+	border:solid #c2c2c2;
+	border-width:0px 1px 1px 1px;
+	background-color: #fff;
+	color:#333;
+	font-size:.8em;
+	line-height:2em;
+	padding:5px 10px;
+	margin:0px 0px 20px 0px;
+}
+.red {
+	color: red;
+}
+/* phase 2 */
+#learnerinfo {
+	margin: 0px auto 0px auto;
+	width:800px;
+	padding:10px;
+}
+.revisiondata a {
+	text-decoration: underline;
+}
+.table-page-break {
+	display: none;
+}
+#pager {
+	text-align: right;
+}
+#pager img {
+	vertical-align: middle;
+}
+
+.fakeoutput {
+	border: 1px solid black;
+	background-color: pink;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.upload.admin .tablesorter {
+	
+}
+.filters {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.ff {
+	margin-bottom: 10px;
+	font-size: 0.8em;
+clear:both;
+}
+#detaildg {
+	width: inherit;
+}
+
+.password_reset table.tablesorter {
+	margin-left: 20px !important;
+}
+table.tablesorter tbody td {
+padding: 5px 10px 3px 10px !important;
+}
+
+.reports .boxer{
+width: auto;
+}
+.superadmin #centres{
+width:100%;
+margin:0px auto 20px auto;
+}
+#detaildg{
+overflow:visible;
+}
+.reports table.tablesorter tbody td {
+padding: 3px 5px 3px 5px !important;
+}
+
+.reports table.tablesorter thead tr th, .reports table.tablesorter tfoot tr th {
+padding: 5px 15px 5px 5px;
+}
+
+.provider-man #form1{
+padding:0px 10px;
+}
+.provider-man #form1 .subsection, .provider-man .addnewadv, .provider-man .invitenewadv{
+width:46%;
+float:left;
+padding:0px 2% 10px 2%;
+border-width:0px;
+}
+.provider-man #centres, .provider-man #advisors{
+margin-bottom:20px;
+}
+.advadmin #form1{
+padding:10px;
+border:solid 1px #ccc;
+}
+.advadmin .user-details{
+padding:10px;
+border:solid 1px #ccc;
+float:left;
+background-color:#eaeaea;
+}
+.upload .section{
+width:100%;
+margin-bottom:20px;
+}
+.upload .sectioncontent{
+padding:10px 20px;
+}

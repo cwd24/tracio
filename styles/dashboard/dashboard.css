@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/* body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}*/
+
+div {
+	 overflow: hidden; 
+}
+
+#shell {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#left {
+	width: 200px;
+	float: left;
+	margin-right: 5px;
+}
+
+#right {
+	width: 200px;
+	float: left;
+	margin-left: 5px;
+}
+
+#centre {
+	width: 550px;
+	float: left;
+}
+
+
+/* .tabtop {
+	border-top:solid 1px #990000;
+	border-left:solid 1px #990000;
+	border-right:solid 1px #990000;
+	border-bottom: solid 1px #000;
+	padding: 3px;
+	background-color: #990000;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin-top: 3px;
+	min-height: 15px;
+	height:18px;
+}*/
+.tabtop {
+	border-top:solid 1px #990000;
+	border-left:solid 1px #990000;
+	border-right:solid 1px #990000;
+	border-bottom: solid 1px #000;
+	padding: 3px;
+	background-color:#990000;
+	 background-image:url(closed.gif);
+	background-position:center right;
+	background-repeat:no-repeat;
+	color: #FFFFFF;
+	font-weight: bold;
+	/*margin-top: 3px;*/
+	min-height: 15px;
+	height:18px;
+}
+.tabtopopen {
+	background-image:url(open.gif) ! important; 
+		border-top:solid 1px #990000;
+	border-left:solid 1px #990000;
+	border-right:solid 1px #990000;
+	border-bottom: solid 1px #000;
+	padding: 3px;
+	background-color:#990000;
+	background-position:center right;
+	background-repeat:no-repeat;
+	color: #FFFFFF;
+	font-weight: bold;
+	/*margin-top: 3px;*/
+	min-height: 15px;
+	height:18px;
+
+	
+}
+.thetop {
+}
+.tabarrow{
+	color: #FFFFFF;
+	font-weight: bold;
+	min-height: 15px;
+	height:18px;
+	position:relative;
+	right: 0px;
+	float:right;
+	
+}
+
+.tabbox {
+	border: solid #990000;
+	border-width: 0px 1px 1px 1px;
+	padding: 3px;
+}
+
+.tabbox img {
+	/* text-align: center;
+	float: center; */
+}
+#responsetable {
+	vertical-align: top;
+	margin: 0px 5px;
+	
+	/* border: solid black thin; */
+}
+#responsetable td {
+	vertical-align: top;
+	border-top: thin black solid;
+	padding: 10px 0px;
+}
+#responsetable th {
+	border-top: 0px none;
+}
+
+#responsetable .txtresponse {
+	width: 225px;	
+}
+#responsetable .centregraph {
+	width: 100px;
+	text-align: center;
+}
+
+#responsetable img {
+	padding: 5px;
+}
+
+#txtresponse ul, #txtresponse li {
+	margin-left: 0px;
+	padding: 0px;
+}
+/*
+.clicky {
+	border: thin black solid;
+	width: 400px;
+}
+
+.colpanel {
+	float: left;
+}
+
+.butt {
+	background-color:#FF0000;
+	width: 400px;
+}
+
+.content {
+background-color: #FFFF00;
+	width: 400px;
+	height: 400px;
+	
+}*/
