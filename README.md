@@ -22,7 +22,10 @@ Disclaimer: The current maintainers of this github repository are not the origin
 
 An overview of installing tracio is as follows;
 
-1. Download Tracio either via Git or as a Zip file from Github
+1. Download Tracio preferably via Git
+   git clone https://github.com/rscwales/tracio 
+   git submodule update --init
+  Alternatively, download the zip file, noting that you will need to download the zip file for each repository in external/
 2. Unpack the above into a folder in your webserver document root.
 3. Create a MySQL Database and import the file doc/tracio.sql (If you have an existing Tracio SQL backup you should import that instead)
 4. Update config.php and db_config.php
