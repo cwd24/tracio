@@ -376,7 +376,7 @@ CREATE TABLE `sb_roles_types` (
 
 LOCK TABLES `sb_roles_types` WRITE;
 /*!40000 ALTER TABLE `sb_roles_types` DISABLE KEYS */;
-INSERT INTO `sb_roles_types` VALUES (1,'DfES Admin','DA',1),(2,'Super Provider Admin','SA',2),(3,'Provider Admin','PA',3),(40,'Advisor','A',5),(50,'Learner','L',6),(35,'Advisor Plus','A+',4);
+INSERT INTO `sb_roles_types` VALUES (1,'Super Admin','DA',1),(2,'Super Provider Admin','SA',2),(3,'Provider Admin','PA',3),(40,'Advisor','A',5),(50,'Learner','L',6),(35,'Advisor Plus','A+',4);
 /*!40000 ALTER TABLE `sb_roles_types` ENABLE KEYS */;
 UNLOCK TABLES;
 
