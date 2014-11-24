@@ -7,6 +7,3 @@
 [submodule "external/tablesorter"]
 	path = external/tablesorter
 	url = https://github.com/christianbach/tablesorter
-[submodule "external/pChart"]
-	path = external/pChart
-	url = https://github.com/realityking/pChart

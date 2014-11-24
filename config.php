@@ -30,13 +30,6 @@ if (!isset ($CFG->debug)) {
     $CFG->fullhttp = 'https://tracio.rsc-wales.ac.uk' . $CFG->apphttp;
     
     
-   	// pChart configs
-   	$CFG->pchart = 'external/pChart/';
-    $CFG->pchartloc = $CFG->apploc . $CFG->pchart;
-    $CFG->pchartsrc = $CFG->pchartloc . 'src/';
-    $CFG->pcharttmp = $CFG->apploc . '/tmp';
-    $CFG->pcharttmphttp = $CFG->apphttp . '/tmp';
-    
     // recaptcha
     // Get a key from http://recaptcha.net/api/getkey
 	$CFG->recaptcha_public = 'CHANGEME';
