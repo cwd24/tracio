@@ -1,8 +1,8 @@
 <?php
 
 include_once ('./config.php');
-include_once($CFG->pchartloc  . '/pData.php');
-include_once($CFG->pchartloc  . '/pChart.php');
+include_once($CFG->pchartsrc  . '/pData.php');
+include_once($CFG->pchartsrc  . '/pChart.php');
 
 global $CFG;
 

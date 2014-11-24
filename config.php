@@ -31,10 +31,11 @@ if (!isset ($CFG->debug)) {
     
     
    	// pChart configs
-   	$CFG->pchart = 'external//pChart';
+   	$CFG->pchart = 'external/pChart/';
     $CFG->pchartloc = $CFG->apploc . $CFG->pchart;
-    $CFG->pcharttmp = $CFG->pchartloc . '/tmp';
-    $CFG->pcharttmphttp = $CFG->apphttp . $CFG->pchart . '/tmp';
+    $CFG->pchartsrc = $CFG->pchartloc . 'src/';
+    $CFG->pcharttmp = $CFG->apploc . '/tmp';
+    $CFG->pcharttmphttp = $CFG->apphttp . '/tmp';
     
     // recaptcha
     // Get a key from http://recaptcha.net/api/getkey
