@@ -35,7 +35,7 @@ CREATE TABLE `sb_activations` (
   `emailsent` tinyint(1) NOT NULL DEFAULT '0',
   `roleid` int(11) NOT NULL DEFAULT '40',
   PRIMARY KEY (`ActivationID`)
-) ENGINE=MyISAM AUTO_INCREMENT=824 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=826 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -266,7 +266,7 @@ CREATE TABLE `sb_providers` (
   `superproviderid` int(10) unsigned NOT NULL,
   `visible` tinyint(1) unsigned NOT NULL DEFAULT '1',
   PRIMARY KEY (`ProviderID`)
-) ENGINE=MyISAM AUTO_INCREMENT=237 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=239 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -446,7 +446,7 @@ CREATE TABLE `sb_super_providers` (
   `name` text NOT NULL,
   `providerid` int(10) unsigned NOT NULL,
   PRIMARY KEY (`SuperProviderID`)
-) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -475,7 +475,7 @@ CREATE TABLE `sb_user_interventions` (
   `sitting` int(11) NOT NULL,
   `other` varchar(1000) DEFAULT NULL COMMENT 'For adding an ''''other'''' option if relevant. TypeID needs to be 100 (''''Other'''') for this to be set and displayed.',
   PRIMARY KEY (`InterventionID`)
-) ENGINE=MyISAM AUTO_INCREMENT=14396 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=14398 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -484,7 +484,6 @@ CREATE TABLE `sb_user_interventions` (
 
 LOCK TABLES `sb_user_interventions` WRITE;
 /*!40000 ALTER TABLE `sb_user_interventions` DISABLE KEYS */;
-INSERT INTO `sb_user_interventions` VALUES (706,1425,1,'0000-00-00 00:00:00','0000-00-00 00:00:00',1,NULL);
 /*!40000 ALTER TABLE `sb_user_interventions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -503,7 +502,7 @@ CREATE TABLE `sb_users_attempt` (
   `assessmenttype` tinytext NOT NULL COMMENT 'Is this with the tutor or alone? Store as tutor OR self?',
   `delegate` int(11) NOT NULL COMMENT 'User id of user who undertook the activity on the users behalf. Used for updates and advisor id storage.',
   PRIMARY KEY (`AttemptID`)
-) ENGINE=MyISAM AUTO_INCREMENT=42494 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=42497 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -512,7 +511,6 @@ CREATE TABLE `sb_users_attempt` (
 
 LOCK TABLES `sb_users_attempt` WRITE;
 /*!40000 ALTER TABLE `sb_users_attempt` DISABLE KEYS */;
-INSERT INTO `sb_users_attempt` VALUES (3710,1425,'2011-06-17 10:13:22',1,'l',0),(3711,1425,'2011-06-17 10:13:46',2,'l',0),(3717,1425,'2011-06-20 09:12:12',1,'a',0);
 /*!40000 ALTER TABLE `sb_users_attempt` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -535,7 +533,7 @@ CREATE TABLE `sb_users_attempt_answers` (
   `q7` tinyint(2) NOT NULL,
   `q8` tinyint(2) NOT NULL,
   PRIMARY KEY (`answersID`)
-) ENGINE=MyISAM AUTO_INCREMENT=41402 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=41405 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -544,7 +542,6 @@ CREATE TABLE `sb_users_attempt_answers` (
 
 LOCK TABLES `sb_users_attempt_answers` WRITE;
 /*!40000 ALTER TABLE `sb_users_attempt_answers` DISABLE KEYS */;
-INSERT INTO `sb_users_attempt_answers` VALUES (2618,3710,2,2,0,3,2,4,5,4),(2619,3711,4,4,0,4,4,5,2,3),(2625,3717,4,2,0,4,3,4,5,4);
 /*!40000 ALTER TABLE `sb_users_attempt_answers` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -568,7 +565,7 @@ CREATE TABLE `sb_users_attempt_answers_attendances` (
   `other` text NOT NULL,
   `attemptid` int(10) unsigned NOT NULL,
   PRIMARY KEY (`AttendancesID`)
-) ENGINE=MyISAM AUTO_INCREMENT=41402 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=41405 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -577,7 +574,6 @@ CREATE TABLE `sb_users_attempt_answers_attendances` (
 
 LOCK TABLES `sb_users_attempt_answers_attendances` WRITE;
 /*!40000 ALTER TABLE `sb_users_attempt_answers_attendances` DISABLE KEYS */;
-INSERT INTO `sb_users_attempt_answers_attendances` VALUES (2618,2618,0,0,0,1,1,0,0,'',0),(2619,2619,0,0,0,0,0,1,0,'',0),(2625,2625,0,0,0,0,1,0,0,'',0);
 /*!40000 ALTER TABLE `sb_users_attempt_answers_attendances` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -621,6 +617,7 @@ CREATE TABLE `sb_users_info` (
   `fname` text NOT NULL,
   `sname` text NOT NULL,
   `email` text NOT NULL,
+  `dob` date DEFAULT NULL,
   `roleid` int(11) NOT NULL,
   `providerid` int(16) NOT NULL,
   `ethnicityid` int(11) NOT NULL,
@@ -632,8 +629,11 @@ CREATE TABLE `sb_users_info` (
   `programmeid` int(11) NOT NULL,
   `registerdate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `advisorid` int(11) NOT NULL,
+  `archived` tinyint(1) NOT NULL DEFAULT '0',
+  `archivereason` text,
+  `enableemails` tinyint(1) DEFAULT '1',
   PRIMARY KEY (`UserID`)
-) ENGINE=MyISAM AUTO_INCREMENT=1531 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=16742 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -642,7 +642,7 @@ CREATE TABLE `sb_users_info` (
 
 LOCK TABLES `sb_users_info` WRITE;
 /*!40000 ALTER TABLE `sb_users_info` DISABLE KEYS */;
-INSERT INTO `sb_users_info` VALUES (3,'learner','5f4dcc3b5aa765d61d8327deb882cf99','Sc','Temp','learner@rsc-wales.ac.uk',5,223,1,'m',2,0,1,0,1,'2011-06-17 10:06:23',0),(2,'advisor','5f4dcc3b5aa765d61d8327deb882cf99','Sc','Advisor','advisor@rsc-wales.ac.uk',4,223,1,'m',2,0,1,0,1,'2011-06-17 10:58:59',0),(1,'admin','5f4dcc3b5aa765d61d8327deb882cf99','Admin','Admin','admin@rsc-wales.ac.uk',1,223,1,'f',2,0,1,0,1,'2014-11-19 16:40:29',0);
+INSERT INTO `sb_users_info` VALUES (16738,'admin','5f4dcc3b5aa765d61d8327deb882cf99','Super','Admin','support@rsc-wales.ac.uk',NULL,1,223,1,'f',2,0,1,0,1,'2014-11-24 16:55:31',0,0,NULL,NULL);
 /*!40000 ALTER TABLE `sb_users_info` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -659,7 +659,7 @@ CREATE TABLE `sb_users_learner_assignment` (
   `learnerid` int(11) NOT NULL,
   `enabled` int(1) NOT NULL COMMENT '1-enabled, 0-disabled',
   PRIMARY KEY (`AssignmentID`)
-) ENGINE=MyISAM AUTO_INCREMENT=16174 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=16175 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -668,7 +668,6 @@ CREATE TABLE `sb_users_learner_assignment` (
 
 LOCK TABLES `sb_users_learner_assignment` WRITE;
 /*!40000 ALTER TABLE `sb_users_learner_assignment` DISABLE KEYS */;
-INSERT INTO `sb_users_learner_assignment` VALUES (1043,1426,1425,1);
 /*!40000 ALTER TABLE `sb_users_learner_assignment` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -706,4 +705,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-11-20 16:04:08
+-- Dump completed on 2014-11-24 18:00:42
