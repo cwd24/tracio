@@ -1,9 +1,9 @@
-[submodule "external/recaptcha"]
-	path = external/recaptchalib
-	url = https://github.com/alchemy-fr/recaptcha
 [submodule "external/jgcharts"]
 	path = external/jgcharts
 	url = https://github.com/cpjolicoeur/jgcharts
 [submodule "external/tablesorter"]
 	path = external/tablesorter
 	url = https://github.com/christianbach/tablesorter
+[submodule "external/recaptcha-php"]
+	path = external/recaptchalib
+	url = https://github.com/freefri/recaptcha-php
